@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 iv_game_arr[i][j].setPadding(2, 2, 2, 2);
                 /*设置方块数据*/
                 iv_game_arr[i][j].setTag(new GameData(bitmap, i, j));
+
                 iv_game_arr[i][j].setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -321,7 +322,7 @@ public class MainActivity extends AppCompatActivity {
 
     /*判断游戏结束的方法*/
     public void isGameOver() {
-        boolean isGameOver = false;
+        boolean isGameOver = true;
         /*遍历每个小方块*/
         for (int i = 0; i < iv_game_arr.length; i++) {
             for (int j = 0; j < iv_game_arr[0].length; j++) {

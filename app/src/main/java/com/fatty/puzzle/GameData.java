@@ -22,6 +22,8 @@ public class GameData {
         this.bitmap = bitmap;
         this.x = x;
         this.y = y;
+        this.p_x = x;
+        this.p_y = y;
     }
 
     /*判断方块是否在正确的位置
